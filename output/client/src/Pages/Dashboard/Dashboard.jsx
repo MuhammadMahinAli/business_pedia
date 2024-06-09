@@ -11,8 +11,11 @@ import rf from "../../assets/refresh.png";
 
 import Navbar from "../HomepageComponents/Navbar";
 import Chatbot1 from "../Chatbot1";
+import { useState } from "react";
+import AiPopup from "../../common/AiPopup";
 
 const Dashboard = () => {
+  const [openPopup, setOpenPopup] = useState(false)
   return (
     <div className="w-full relative bg-gray-800 h-[1658px] overflow-hidden text-white">
       <Navbar />
@@ -20,10 +23,13 @@ const Dashboard = () => {
         <div className="flex justify-between">
           <h1 className="text-3xl font-bold">Dashboard</h1>
           <div className="flex items-center space-x-4">
-            <img className="" src={rs} alt="" />
+            <img onClick={()=>setOpenPopup(!openPopup)} className="" src={rs} alt="" />
             <img className="" src={rf} alt="" />
             <img className="" src={dt} alt="" />
           </div>
+          {
+            openPopup && <AiPopup openPopup={openPopup}/>
+          }
         </div>
       </div>
       <div className=" w-[350px] absolute right-[20px] top-[230px]">

@@ -7,7 +7,7 @@ import TopSection from "../PackagesComponents/TopSection";
 const Packages = () => {
   return (
     <div className="w-full relative bg-gray-800 h-[1458px] overflow-hidden text-white">
-        <Navbar/>
+      <Navbar />
       <BottomSection />
       <div className="absolute top-[1283px] right-[61.2px] w-[67.8px] h-[67px] overflow-hidden">
         <div className="absolute top-[0px] left-[0px] w-[67.8px] h-[67px]">

@@ -1,4 +1,37 @@
-# React + Vite
+Technologies
+Front-end
+HTML
+Tailwind CSS
+Back-end
+Node JS
+Express JS
+Mongoose
+Programming Language
+JavaScript
+
+Api
+OpenAI Api
+
+NodeJS
+https://nodejs.org/en
+
+
+
+
+Download LTS version of node.js
+- install the package
+
+- Frontend
+- npm install 
+- npm install --force
+- npm run dev
+
+backend
+npm install
+npm install nodemon
+npm run dev
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
