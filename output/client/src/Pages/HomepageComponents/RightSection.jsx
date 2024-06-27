@@ -4,7 +4,7 @@ import { FaUser, FaRegMoon } from "react-icons/fa6";
 const RightSection = ({ className = "" }) => {
   return (
     <div
-      className={`absolute h-full w-[10.37%] top-[0%] right-[-15.77%] bottom-[0%] left-[105.39%] text-center text-lg text-ffffff font-font-awesome-6-pro ${className}`}
+      className={`absolute h-full w-full top-[10%]  bottom-[0%] left-[105.39%] text-center text-lg text-ffffff font-font-awesome-6-pro ${className}`}
     >
       <div className="absolute h-full w-[43.15%] top-[0%] right-[0%] bottom-[0%] left-[56.85%]">
         <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] overflow-hidden">

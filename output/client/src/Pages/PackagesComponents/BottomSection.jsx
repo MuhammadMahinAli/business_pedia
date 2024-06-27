@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const BottomSection = ({ className = "" }) => {
   return (
     <div
-      className={`absolute w-full top-[790px] right-[2px] left-[-2px] h-[396px] text-left text-xl text-ffffff font-inter ${className}`}
+      className={`absolute w-full top-[690px] right-[2px] left-[-2px] h-[396px] text-left text-xl text-ffffff font-inter ${className}`}
     >
       <div className="absolute top-[0.4px] left-[818.7px] [filter:blur(179px)] rounded-[50%] bg-gray-300 w-[213.1px] h-[421.9px] [transform:_rotate(85.7deg)] [transform-origin:0_0]" />
       <div className="absolute top-[347.3px] left-[1221.2px] [filter:blur(179px)] rounded-[50%] bg-gray-300 w-[227.8px] h-[451.1px] [transform:_rotate(140.3deg)] [transform-origin:0_0]" />

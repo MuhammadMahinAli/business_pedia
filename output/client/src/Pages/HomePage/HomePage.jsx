@@ -10,8 +10,6 @@ import CardThree from "../HomepageComponents/CardThree";
 import CardTwo from "../HomepageComponents/CardTwo";
 import Chatbot from "../HomepageComponents/Chatbot";
 import FilterSection from "../HomepageComponents/FilterSection";
-import Footer from "../HomepageComponents/Footer";
-import Navbar from "../HomepageComponents/Navbar";
 import ToggleTab from "../HomepageComponents/ToggleTab";
 import Topsection from "../HomepageComponents/TopSection";
 
@@ -39,7 +37,7 @@ const HomePage = () => {
       <CardSix />
       <CardNine />
       <FilterSection />
-      <Navbar />
+      {/* <Navbar /> */}
       <Topsection />
       <ToggleTab />
       <BottomSection />

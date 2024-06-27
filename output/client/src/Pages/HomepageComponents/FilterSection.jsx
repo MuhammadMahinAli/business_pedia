@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const FilterSection = ({ className = "" }) => {
   return (
     <div
-      className={`absolute top-[389px] left-[65px] w-[310px] h-[89px] text-left text-6xl text-ffffff font-inter ${className}`}
+      className={`absolute top-[379px] left-[65px] w-[310px] h-[89px] text-left text-6xl text-ffffff font-inter ${className}`}
     >
       <div className="text-4xl absolute top-[67px] left-[3px] tracking-[0.1em] capitalize inline-block ">
         raising now
