@@ -5,13 +5,13 @@ import axios from "axios";
 
 const app = express();
 app.use(cors());
-const bodyParserLimit = "100mb";
+const bodyParserLimit = "1000mb";
 app.use(express.json({ limit: bodyParserLimit }));
 app.use(express.urlencoded({ extended: true, limit: bodyParserLimit }));
 
 const apiKey =
   process.env.OPENAI_API_KEY ||
-  "sk-proj-mOdDyyQQq6GBxkH5vbaNT3BlbkFJxR7N09AHu6KnHqUwNV27";
+  "sk-proj-fQhN9DHDlKqn5M2UnQ7mT3BlbkFJm2f9lsol8w5IC1hKgqas";
 
 app.get("/", (req, res) => {
   res.send("Server is Listening..");
@@ -20,6 +20,117 @@ app.get("/", (req, res) => {
 app.post("/analyze", async (req, res) => {
   try {
     console.log("Received request to /analyze endpoint");
+    const { query } = req.body;
+    const relevantKeywords = [
+      "data",
+      "improve",
+      "business",
+      "result",
+      "analyze",
+      "feedback",
+      "sales",
+      "inventory",
+      "performance",
+      "marketing",
+      "campaign",
+      "customer",
+      "behavior",
+      "suggestions",
+      "optimization",
+      "efficiency",
+      "metrics",
+      "growth",
+      "strategy",
+      "analytics",
+      "trend",
+      "insight",
+      "evaluation",
+      "revenue",
+      "profit",
+      "cost",
+      "engagement",
+      "satisfaction",
+      "retention",
+      "loyalty",
+      "experience",
+      "benchmark",
+      "improvement",
+      "assessment",
+      "operation",
+      "workflow",
+      "report",
+      "analysis",
+      "target",
+      "objective",
+      "solution",
+      "tracking",
+      "dashboard",
+      "review",
+      "process",
+      "recommendation",
+      "insights",
+      "forecast",
+      "projection",
+      "ROI",
+      "CAGR",
+      "variance",
+      "diagnostic",
+      "KPIs",
+      "quantitative",
+      "qualitative",
+      "statistics",
+      "modeling",
+      "demographics",
+      "segmentation",
+      "predictive",
+      "prescriptive",
+      "descriptive",
+      "dashboard",
+      "visualization",
+      "big data",
+      "data mining",
+      "machine learning",
+      "artificial intelligence",
+      "deep learning",
+      "neural networks",
+      "business intelligence",
+      "reporting",
+      "data warehouse",
+      "ETL",
+      "data governance",
+      "data quality",
+      "data integrity",
+      "data privacy",
+      "data security",
+      "data lake",
+      "cloud computing",
+      "check",
+      "collection",
+      "profit",
+      "data",
+      "data-driven",
+      "actionable insights",
+      "business process",
+      "operational efficiency",
+      "customer journey",
+      "churn rate",
+      "customer acquisition",
+      "customer lifetime value",
+      "competitive analysis",
+      "market research",
+      "business model",
+      "innovation"
+    ];
+    ``
+    
+    const isRelevant = relevantKeywords.some((keyword) =>
+      query.toLowerCase().includes(keyword)
+    );
+
+    if (!isRelevant) {
+      res.json({ message: "No data found" });
+      return;
+    }
 
     // Using static data for simplicity
     const customerBehaviorData = [
@@ -347,7 +458,7 @@ app.post("/analyze", async (req, res) => {
           { role: "system", content: "You are an expert data analyst." },
           { role: "user", content: prompt },
         ],
-        max_tokens: 150,
+        max_tokens: 1000,
       },
       {
         headers: {
