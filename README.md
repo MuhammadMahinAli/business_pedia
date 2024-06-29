@@ -80,9 +80,7 @@ Prompt used for trainiing the AI
 ]
 
 
-![Bangladesh](./client/src/assets/navbaroutput.png)
-![Bangladesh](./client/src/assets/page2output.png)
-![Bangladesh](./client/src/assets/packageoutput.png)
+
 ![Navbar](./output/client/src/assets/navbaroutput.png)
 ![FoodIndustryGrowthConsultant](./output/client/src/assets/page2output.png)
 ![Packages](./output/client/src/assets/packageoutput.png)
