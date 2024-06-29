@@ -10,11 +10,16 @@ app.use(express.json({ limit: bodyParserLimit }));
 app.use(express.urlencoded({ extended: true, limit: bodyParserLimit }));
 
 const apiKey =
-  process.env.OPENAI_API_KEY ||
-  "sk-proj-fQhN9DHDlKqn5M2UnQ7mT3BlbkFJm2f9lsol8w5IC1hKgqas";
+  process.env.OPENAI_API_KEY
 
 app.get("/", (req, res) => {
   res.send("Server is Listening..");
+});
+app.get("/test", (req, res) => {
+  res.send("Test 1 is working ..");
+});
+app.get("/test2", (req, res) => {
+  res.send("Test 2 is working ..");
 });
 
 app.post("/analyze", async (req, res) => {
@@ -119,10 +124,10 @@ app.post("/analyze", async (req, res) => {
       "competitive analysis",
       "market research",
       "business model",
-      "innovation"
+      "innovation",
     ];
-    ``
-    
+    ``;
+
     const isRelevant = relevantKeywords.some((keyword) =>
       query.toLowerCase().includes(keyword)
     );
