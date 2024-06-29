@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true, limit: bodyParserLimit }));
 const apiKey = process.env.OPENAI_API_KEY
 
 app.get("/", (req, res) => {
-  res.send("Server is Listening..");
+  res.send("Server is Listening.");
 });
 app.get("/test", (req, res) => {
   res.send("Test 1 is working ..");

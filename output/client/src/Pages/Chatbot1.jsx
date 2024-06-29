@@ -123,7 +123,7 @@ const Chatbot1 = () => {
     setInput("");
 
     try {
-      const response = await axios.post("http://localhost:3000/analyze", {
+      const response = await axios.post("https://business-pedia.onrender.com/analyze", {
         query: input,
       });
       const botMessage = { sender: "bot", text: response.data.suggestions };
