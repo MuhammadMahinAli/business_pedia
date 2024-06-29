@@ -79,7 +79,13 @@ Prompt used for trainiing the AI
   }
 ]
 
+<<<<<<< HEAD
+![Bangladesh](./client/src/assets/navbaroutput.png)
+![Bangladesh](./client/src/assets/page2output.png)
+![Bangladesh](./client/src/assets/packageoutput.png)
+=======
 ![Navbar](./output/client/src/assets/navbaroutput.png)
 ![FoodIndustryGrowthConsultant](./output/client/src/assets/page2output.png)
 ![Packages](./output/client/src/assets/packageoutput.png)
 
+>>>>>>> 19d9096446de0cd808fc73f07bdb52f8877ae53b
