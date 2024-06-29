@@ -110,8 +110,8 @@ import axios from "axios";
 
 const Chatbot1 = () => {
   const [messages, setMessages] = useState([
-    { sender: "placeholder", text: "What is the customer review ?" },
-    { sender: "placeholder", text: "How can I improve my business ?" }
+    { sender: "placeholder", text: "Can you give me an overview of our sales performance for the past month ?" },
+    { sender: "placeholder", text: "How can we optimize staff schedules to reduce waiting times during peak hours ?" }
   ]);
   const [input, setInput] = useState("");
 

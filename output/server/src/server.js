@@ -46,6 +46,7 @@ import app from "./app.js";
 dotenv.config();
 const port = process.env.PORT || 3000;
 
+console.log(process.env.OPENAI_API_KEY);
 
 app.use(bodyParser.json());
 

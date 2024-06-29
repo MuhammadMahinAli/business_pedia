@@ -9,8 +9,7 @@ const bodyParserLimit = "1000mb";
 app.use(express.json({ limit: bodyParserLimit }));
 app.use(express.urlencoded({ extended: true, limit: bodyParserLimit }));
 
-const apiKey =
-  process.env.OPENAI_API_KEY
+const apiKey = process.env.OPENAI_API_KEY
 
 app.get("/", (req, res) => {
   res.send("Server is Listening..");
@@ -101,14 +100,14 @@ app.post("/analyze", async (req, res) => {
       "business intelligence",
       "reporting",
       "data warehouse",
-      "ETL",
-      "data governance",
-      "data quality",
-      "data integrity",
-      "data privacy",
-      "data security",
-      "data lake",
-      "cloud computing",
+      "how",
+      "why",
+      "when",
+      "what",
+      "privacy",
+      "security",
+      "me",
+      "can",
       "check",
       "collection",
       "profit",

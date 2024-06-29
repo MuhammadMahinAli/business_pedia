@@ -37,7 +37,6 @@ const HomePage = () => {
       <CardSix />
       <CardNine />
       <FilterSection />
-      {/* <Navbar /> */}
       <Topsection />
       <ToggleTab />
       <BottomSection />
