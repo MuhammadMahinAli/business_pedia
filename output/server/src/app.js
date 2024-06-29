@@ -9,7 +9,7 @@ const bodyParserLimit = "1000mb";
 app.use(express.json({ limit: bodyParserLimit }));
 app.use(express.urlencoded({ extended: true, limit: bodyParserLimit }));
 
-const apiKey = process.env.OPENAI_API_KEY
+const apiKey = "sk-proj-DWlb0bRDIIthw6jJQHKsT3BlbkFJ2ujZ7xLQPKBCj2tExNxV"
 
 app.get("/", (req, res) => {
   res.send("Server is Listening.");
