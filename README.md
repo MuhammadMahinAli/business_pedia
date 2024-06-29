@@ -1,57 +1,44 @@
-Technologies
-Front-end
-HTML
-Tailwind CSS
-Back-end
-Node JS
-Express JS
-Mongoose
-Programming Language
-JavaScript
+# Business_pedia
+## Technologies 
+### Front-end 
+ - HTML
+ - Tailwind CSS
+### Back-end 
+ - Node JS
+ - Express JS
+ - Mongoose
+### Programming Language
+ - JavaScript
 
-Api
-OpenAI Api
+### Api 
+ - OpenAI Api
 
-NodeJS
+## NodeJS
 https://nodejs.org/en
 
-
-
-
 Download LTS version of node.js
-- install the package
+install the package
 
-- Frontend
+### Frontend
 - npm install 
 - npm install --force
 - npm run dev
 
-backend
-npm install
-npm install nodemon
-npm run dev
-
-
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Backend
+- npm install
+- npm install nodemon
+- npm run dev
 
 Generative AI with AutoML
- 
-Create a GCP Project
-Prepare Training Data
-Train the Model
-Evaluate and Fine-Tune the Model
-Deploy the Model
-Integration with Node.js Application via API endpoint
+ - Create a GCP Project
+ - Prepare Training Data
+ - Train the Model 
+ - Evaluate and Fine-Tune the Model
+ - Deploy the Model
+ - Integration with Node.js Application via API endpoint
 Data used for training
- 
-Sales data
-Feedback Data
+ - Sales data
+ - Feedback Data
 You can Ask relaven improvements from these datasets.
 
 Prompt used for trainiing the AI
@@ -78,6 +65,16 @@ Prompt used for trainiing the AI
     "response": "To increase foot traffic, we can offer limited-time promotions such as happy hour specials, buy-one-get-one-free deals, or discounts for customers who check in on social media platforms like Facebook or Instagram."
   }
 ]
+
+
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
 
 
 
