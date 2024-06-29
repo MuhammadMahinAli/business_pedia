@@ -26,7 +26,7 @@ const RightSection = ({ className = "" }) => {
   }
   return (
     <div
-      className={`absolute top-[127px] right-[40px] w-[441px]  h-[554px] text-left text-xl text-ffffff font-inter ${className}`}
+      className={`absolute top-[60px] right-[40px] w-[441px]  h-[554px] text-left text-xl text-ffffff font-inter ${className}`}
     >
       {/* <img
         className="absolute  right-[88.21%]  left-[5.67%] max-w-full overflow-hidden max-h-full"
