@@ -14,12 +14,7 @@ const apiKey = process.env.OPENAI_API_KEY
 app.get("/", (req, res) => {
   res.send("Server is Listening.");
 });
-app.get("/test", (req, res) => {
-  res.send("Test 1 is working ..");
-});
-app.get("/test2", (req, res) => {
-  res.send("Test 2 is working ..");
-});
+
 
 app.post("/analyze", async (req, res) => {
   try {
